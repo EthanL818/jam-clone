@@ -1,0 +1,26 @@
+.contactIcon {
+
+    color: white;
+    height: 2rem;
+    width: 2rem;
+
+    :hover {
+        color: black;
+    }
+}
+
+.socialIcon {
+    margin: .5rem;
+    height: 2rem;
+    width: 2rem;
+    color: white;
+
+    :hover {
+        color: #CADFFF;
+        border-bottom: white;
+    }
+}
+
+.height {
+    min-height: 25vh;
+}

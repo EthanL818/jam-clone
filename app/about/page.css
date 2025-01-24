@@ -1,0 +1,43 @@
+.slick-prev:before,
+.slick-next:before {
+  font-family: Arial, sans-serif; /* Use a cleaner font for the arrow */
+  color: #333; /* Dark grey color for better visibility */
+  font-size: 16px; /* Adjust the arrow size to fit the box */
+  content: "‹"; /* Replace with left arrow character */
+}
+
+.slick-next:before {
+  content: "›"; /* Replace with right arrow character */
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%; /* Center the arrows vertically */
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #f0f0f0; /* Grey background for the box */
+  border: 2px solid #d0d0d0; /* Subtle border around the box */
+  border-radius: 50%; /* Make the box circular */
+  width: 20px; /* Fixed width for the box */
+  height: 20px; /* Fixed height for the box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: -20px; /* Adjust distance from the slider */
+}
+
+.slick-next {
+  right: -20px; /* Adjust distance from the slider */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  border-color: #b0b0b0; /* Darker border on hover */
+  color: #000; /* Darker arrow on hover */
+}
